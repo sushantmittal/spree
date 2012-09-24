@@ -14,12 +14,22 @@
   }
   .select2-choice {
     background-image: none !important;
+<<<<<<< HEAD
     background-color: $c_blue3 !important;
     border: 1px solid darken($c_blue3, 5) !important;
     color: white !important;
     border-radius: 0 !important;
     font-size: 80% !important;
     height: inherit !important;
+=======
+    background-color: lighten($c_blue1, 10);
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 3px;
+    color: white !important;    
+    font-size: 90%;
+    height: 31px;    
+>>>>>>> More admin cruft cleaning
     line-height: inherit !important;
     padding: 5px 10px !important;
 
