@@ -1,5 +1,15 @@
 var initProductActions = function(){
 
+  $('a.delete').live('mouseover mouseout', function(event) {
+    if (event.type == 'mouseover') {
+      $(this).parent().addClass('action-remove');
+    } else {
+      $(this).parent().removeClass('action-remove');
+    }
+  });
+
+  $(".product_autocomplete").product_autocomplete();
+
   $('.calculator-fields').each(function(){
     var $fields_container = $(this);
     var $type_select = $fields_container.find('.type-select');
