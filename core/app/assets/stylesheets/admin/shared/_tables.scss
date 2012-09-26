@@ -4,6 +4,10 @@ table {
 
   th, td {
     padding: 15px 10px;
+<<<<<<< HEAD
+=======
+    border: 1px solid transparent;
+>>>>>>> Various font style fixes
     border-right: 1px solid $color-border;    
     vertical-align: middle;
     text-overflow: ellipsis;
@@ -94,6 +98,7 @@ table {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   td.actions {
     text-align: center;
@@ -162,6 +167,8 @@ table {
   }
 
 >>>>>>> More admin cruft cleaning
+=======
+>>>>>>> Various font style fixes
   thead {
     th {
       background-color: lighten($c_blue1, 33);
