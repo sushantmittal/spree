@@ -1,9 +1,16 @@
 @import 'admin/globals/variables';
 @import 'font-awesome';
 
+.variant_autocomplete {
+  width: 100%;
+}
+
 .select2-container {
   &.select2-container-active {
     .select2-choice {box-shadow: none !important;}
+  }
+  .select2-choices {
+    width: 150px;
   }
   .select2-choice {
     background-image: none !important;
