@@ -9,7 +9,6 @@ var initProductActions = function(){
     }
   });
 
-  console.log($(".variant_autocomplete"))
   $(".variant_autocomplete").variantAutocomplete();
 
   $('.calculator-fields').each(function(){
