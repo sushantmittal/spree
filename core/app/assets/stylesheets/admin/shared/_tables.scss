@@ -4,10 +4,6 @@ table {
 
   th, td {
     padding: 15px 10px;
-<<<<<<< HEAD
-=======
-    border: 1px solid transparent;
->>>>>>> Various font style fixes
     border-right: 1px solid $color-border;    
     vertical-align: middle;
     text-overflow: ellipsis;
@@ -97,78 +93,6 @@ table {
     border-bottom: 1px solid $color-border;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  td.actions {
-    text-align: center;
-    border: none;
-
-    span.text {
-      font-size: $body-font-size;
-    }
-
-    [class*='icon-'].no-text {
-      font-size: 120%;
-      background-color: lighten($c_blue1, 33);
-      border: 1px solid $color-border;
-      border-radius: 15px;
-      width: 29px;
-      height: 29px;
-      display: inline-block;
-      padding-top: 2px;
-
-      &:before {
-        text-align: center !important;
-        width: 27px;
-        display: inline-block;
-      }
-
-      &:hover {
-        border-color: transparent;
-      }
-    }
-    .icon-envelope-alt {
-      color: $color-links;
-
-      &:hover {
-        background-color: $c_blue1;
-        color: white;
-      }
-    }
-    .icon-trash {
-      &.no-text {
-        
-      }
-
-      &:hover {
-        background-color: $c_red1;
-        color: white;        
-      }
-    }    
-    .icon-edit:hover {
-      background-color: $c_green1;
-      color: white;
-    }
-    .icon-copy {
-      &.no-text {
-        
-      }
-
-      &:hover {
-        background-color: $c_yellow1;
-        color: white;
-      }
-    }
-  }
-  
-  td.sort-active {
-    background-color: lighten($c_blue1, 33) !important;
-  }
-
->>>>>>> More admin cruft cleaning
-=======
->>>>>>> Various font style fixes
   thead {
     th {
       background-color: lighten($c_blue1, 33);
@@ -283,23 +207,4 @@ table {
       }
     }
   }
-<<<<<<< HEAD
-
-  tbody:last-child {
-    tr:last-child {
-      td { 
-        border-bottom: 1px solid $color-border;
-      }
-    }
-  }
-
-  tbody:last-child {
-    tr:last-child {
-      td { 
-        border-bottom: 1px solid $color-border;
-      }
-    }
-  }
-=======
->>>>>>> Various font style fixes
 }
