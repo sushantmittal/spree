@@ -20,7 +20,9 @@ module Spree
       end
 
       def update
-        params[:product][:taxon_ids] = params[:product][:taxon_ids].split(',')
+        if params[:product][:taxon_ids].present?
+          params[:product][:taxon_ids] = params[:product][:taxon_ids].split(',')
+        end
         super
       end
 
