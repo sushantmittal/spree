@@ -19,6 +19,11 @@ module Spree
         end
       end
 
+      def update
+        params[:product][:taxon_ids] = params[:product][:taxon_ids].split(',')
+        super
+      end
+
       def destroy
         @product = Product.where(:permalink => params[:id]).first!
         @product.delete
