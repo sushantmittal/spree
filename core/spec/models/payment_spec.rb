@@ -274,6 +274,25 @@ describe Spree::Payment do
           lambda { payment.void_transaction! }.should raise_error(Spree::Core::GatewayError)
         end
       end
+
+      context 'when payment is already void' do
+        before do
+          payment.state = 'void'
+        end
+
+        it 'should not receive void' do
+          payment.should_not_receive(:void)
+          payment.void_transaction!
+        end
+
+        it 'should not raise error Spree::Core::GatewayError' do
+          lambda { payment.void_transaction! }.should_not raise_error(Spree::Core::GatewayError)
+        end
+        
+        it 'should return true' do
+          payment.void_transaction!.should eq true
+        end
+      end
     end
 
     context "#credit" do
