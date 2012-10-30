@@ -4,6 +4,8 @@ module Spree
 
       respond_to :html, :json, :js
 
+      after_filter :set_flash_message, :only => :update
+
       def search
         if params[:ids]
           @taxons = Spree::Taxon.where(:id => params[:ids])
@@ -115,6 +117,15 @@ module Spree
         Product.find_by_permalink! params[:product_id]
       end
 
+      def set_flash_message
+        unless @taxon.errors.full_messages.empty?
+          error_message = "#{@taxon.name_was} taxon cannot be updated because"
+          @taxon.errors.full_messages.each do |msg|
+            error_message += "<li>#{msg}</li>"
+          end
+          flash[:error] = error_message.html_safe
+        end
+      end
     end
   end
 end
